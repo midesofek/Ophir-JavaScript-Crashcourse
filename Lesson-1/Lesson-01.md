@@ -44,20 +44,29 @@ A string in Javascript is an array of characters represented between double quot
 E.g:
 
 ```
-
-
-
-
+"Ophir Institute"
+"Bitcoin to the Moon"
+'PineApples'
+'Samsung'
+`Apple`
+`Airplane`
 ```
 
 ### Boolean
 
 A boolean value is either true or false.
 
-```
 e.g:
 
+```
+true
+false
 
+// Also
+const checkValue1 = 10 > 5;
+const checkValue2 = 10 < 5;
+console.log(checkValue1); // returns true;
+console.log(checkValue2); // returns false;
 ```
 
 ### Undefined
@@ -65,8 +74,11 @@ e.g:
 As the name implies, a variable is `undefined` in Javascript if we don't assign a value to it.
 Another occurrences where is a function does not return a value.
 
-```
 e.g:
+
+```
+let birthDate;
+console.log(birthDate); // returns undefined
 ```
 
 ### Null
@@ -80,21 +92,42 @@ console.log(birthDate);
 
 ### BigInt
 
-A big int data type is a numeric primitive that can hold and store large integers (i.e. large numeric values) beyond what you can ordinarily store with the `number` data type (i.e `Number.Max_SAFE_INTEGER`)
+A big int data type is a numeric primitive that can hold and store large integers (i.e. large numeric values) beyond what you can ordinarily store with the `number` data type (i.e `Number.MAX_SAFE_INTEGER`)
+
+```
+const checkMaxValue = Number.MAX_SAFE_INTEGER;
+console.log(checkMaxValue); // returns 9007199254740991
+```
 
 ### Symbol
 
 The symbol data type represents primitive values that are unique and immutable.
-A symbol data type is created using `Symbol()`
+
+A symbol data type is created using `Symbol()`.
+
+e.g:
 
 ```
-e.g:
+const greeting1 = Symbol("Hello World");
+const greeting2 = Symbol("Hello World");
+
+console.log(greeting1 === greeting2); // returns false
 ```
+
+> The above example returns false because even though the values are the same, they are stored uniquely, so they are not the same.
 
 ## The Caveat in JS Data Types
 
 It is important to note that unlike what you have in solidity and other statically typed languages, JavaScript has dynamic typing (i.e. it is dynamically typed).
+
 This means that you don't need to declare the type. JavaScript does the type interpretation behind the scenes.
+
+```
+// So you can NOT do this:
+
+let Number age = 29;
+console.log(age) // This returns a syntax error.
+```
 
 ## The `typeof` operator
 
@@ -105,10 +138,14 @@ To do this, you can use the `typeof` operator to check the data type of a certai
 Illustration:
 
 ```
-console.log(typeof 007) //returns number
-console.log(typeof 'Ophir')//returns String
-console.log(typeof ) //returns number
+let birthdate;
+const greeting1 = Symbol("Hello World");
 
+console.log(typeof 007); // returns number
+console.log(typeof "Ophir"); // returns String
+console.log(typeof true); // returns boolean
+console.log(typeof birthDate); // returns undefined
+console.log(typeof greeting1); //returns symbol
 ```
 
 ## Introduction to Comments in JavaScript
@@ -150,31 +187,45 @@ If you need to store a certain value, you declare a variable and store your valu
 
 In Javascript, you can declare a variable in three (3) ways using let, const and var.
 
-### Using Let
+### Using `let`
 
 This is the flexible way of declaring variables. Variables declared with let can be modified, and reassigned and you can also change the data type.
 
-```
-E.g:
-
-
-
+e.g:
 
 ```
+let bestMovie = "Fast & Furious";
+console.log(bestMovie); // returns Fast & Furious - a string
+bestMovie = 300;
+console.log(bestMovie); // returns 300 - a number
+```
 
-### Using Const
+### Using `const`
 
 `const` refers to constant. Values stored in a `const` are immutable (i.e. they cannot be changed).
 
-```
-E.g:
-
+e.g:
 
 ```
+const hobbies = "Writing code";
+console.log(hobbies);
 
-### Using var
+// You can't then do this
+hobbies = "Making money"; // it returns a typeError
+```
+
+### Using `var`
 
 This is the old way of defining variables prior to ES6. There are a lot of vulnerabilities surrounding using var to declare variables in JavaScript.
+
+e.g:
+
+```
+var favouriteColor = "Purple";
+var lastName = "Buterin"
+
+console.log(favouriteColor, lastName);
+```
 
 🤔 You may wonder if it has issues why not remove it?
 
@@ -194,12 +245,13 @@ When it comes to naming variables in Javascript, the universally approved method
 
 That is, sth like this:
 
+e.g:
+
 ```
-E.g:
-
-
-
-
+firstName;
+dateOfBirth;
+greetingFunction;
+createPolicyAgreement;
 ```
 
 There are some other rules to bear in mind, they include the following:
@@ -210,7 +262,12 @@ There are some other rules to bear in mind, they include the following:
 - Do not include a space between words when naming variables.
 
 ```
-E.g:
+//dont's
 
+1Name;
+2Phone;
+first-name;
+birth-day-date;
+askaquestion?;
 
 ```
