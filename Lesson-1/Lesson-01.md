@@ -125,7 +125,8 @@ In Javascript, there are two ways of writing comments:
 - **Single line comments**: this is declared using two forward slashes (//)
 
 ```
-E.g: This is a comment
+E.g:
+// This is a comment
 ```
 
 - **Multi-line Comments**: This is declared with (/\* \*/)
