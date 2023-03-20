@@ -34,8 +34,9 @@ Let's now look into each of these data types.
 ### Number
 
 The number data type includes integers and float point numbers (ie decimals)
-Integers: e.g: 10,9,8,7….3,2,1,0,-1,-2,-100, etc
-Decimals: -10.2, -8.7, -3.66, -0.55, -1.1, etc
+
+1. Integers: e.g: 10,9,8,7….3,2,1,0,-1,-2,-100, etc
+2. Decimals: -10.2, -8.7, -3.66, -0.55, -1.1, etc
 
 ### Strings
 
