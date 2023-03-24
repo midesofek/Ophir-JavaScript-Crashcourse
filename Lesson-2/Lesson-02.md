@@ -15,7 +15,7 @@ In this course, you’ll learn::
 
 Without much further ado, let’s dive straight into this
 
-## ** What does DOM Mean in Javascript? **.
+## What does DOM Mean in Javascript?
 
 When we talk about the Document Object Model, we’re referring to a standard representation of HTML documents.
 
