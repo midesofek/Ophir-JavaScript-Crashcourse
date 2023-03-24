@@ -1,10 +1,10 @@
-# Crash-Course-02: DOM and DOM Manipulation
+# Crash-Course-03: UNDERSTANDING THE BASICS OF EVENTS AND EVENT HANDLING IN JAVASCRIPT
 
 In this lesson, we’ll address the concept of DOM and DoM manipulation from a theoretical and practical standpoint, so as to lay a solid background for you when we start using JS to interact with web pages.
 
 ## Course Overview
 
-In this course, you’ll learn:
+In this course, you’ll learn::
 
 - What the DOM is in Javascript.
 - What DOM Manipulation means.
