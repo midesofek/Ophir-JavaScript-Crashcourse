@@ -2,7 +2,7 @@
 
 In this lesson, you’ll learn:
 
-- What events mean in Javscripts;
+- What events mean in Javascript;
 - Common examples of events in Javascript;
 - What event handling entails in Javascript;
 - The difference between events listeners and event handlers; and
@@ -14,7 +14,7 @@ Simply put, events are those things that occur within an application’s environ
 
 This could be a user click, cursor hover, keyboard press, key hold, page refresh, page scroll, form open, form submission, etc. The list is almost endless as there are lots of ‘things’ that could happen when a user interacts with a website/application.
 
-However, as developers, what is important to us is ‘catching’ and reacting to this events where necessary. And to do this, we attach an **event listener** (or an event handler) to such event.
+However, as developers, what is important to us is ‘catching’ and reacting to these events where necessary. And to do this, we attach an **event listener** (or an event handler) to such event.
 
 ```
 Click example (1 line)
@@ -29,7 +29,7 @@ An **event listener** awaits the trigger of the specified event while the **even
 
 ## Common Events in Javascript
 
-We get a bunch of these events from user engagements with the contents on a website. This is usually referred to as HTML events.
+We get a bunch of these events from user engagements with the content on a website. This is usually referred to as HTML events.
 
 Some of these events include the following:
 
